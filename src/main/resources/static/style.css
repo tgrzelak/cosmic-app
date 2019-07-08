@@ -1,0 +1,19 @@
+.masterhead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/SV85zhW5gizo6hqzx/videoblocks-galaxy-in-space-fullhd_hneknsc3g_thumbnail-full01.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    color: white;
+    font-size: 20px;
+}
+
+.content-header {
+    font-family: 'Oleo Script', cursive;
+    color: white;
+    font-size: 30px;
+}
