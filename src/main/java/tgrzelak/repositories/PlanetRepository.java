@@ -18,7 +18,7 @@ public interface PlanetRepository extends JpaRepository<Planet, Long> {
 
     @Transactional
     @Modifying
-    @Query("select p from Planet p where p.planetName = ?1")
+    @Query("delete from Planet p where p.planetName = ?1")
     void deletePlanetByPlanetName(String planetName);
 
     @Query("select p from Planet p where p.distanceFromSun <= ?1")

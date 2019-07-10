@@ -1,0 +1,17 @@
+<div class="container" xmlns:th="http://www.thymleaf.org" th:fragment="add-planet">
+    <div class="row">
+        <div class="col-12-md">
+            <form th:action="@{/add-planet}" th:object="${planet}" method="post" action="/add-planet">
+                <input type="text" name="planetName" placeholder="Planet name">
+                <input type="number" name="distanceFromSun" placeholder="Distance from sun">
+                <input type="number" name="oneWayLightTimeToTheSun" placeholder="One way light time to the Sun">
+                <input type="number" name="lengthOfYear" placeholder="Length of year">
+                <input type="text" name="planetType" placeholder="Planet type">
+                <textarea type="text" rows="4" cols="30" name="planetInfo" placeholder="Planet info"></textarea>
+                <input type="text" name="planetImage" placeholder="Planet image">
+
+                <button type="submit" class="btn btn-sm btn-success">Create planet</button>
+            </form>
+        </div>
+    </div>
+</div>
