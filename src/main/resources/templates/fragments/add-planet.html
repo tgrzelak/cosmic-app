@@ -1,17 +1,56 @@
-<div class="container" xmlns:th="http://www.thymleaf.org" th:fragment="add-planet">
-    <div class="row">
-        <div class="col-12-md">
-            <form th:action="@{/add-planet}" th:object="${planet}" method="post" action="/add-planet">
-                <input type="text" name="planetName" placeholder="Planet name">
-                <input type="number" name="distanceFromSun" placeholder="Distance from sun">
-                <input type="number" name="oneWayLightTimeToTheSun" placeholder="One way light time to the Sun">
-                <input type="number" name="lengthOfYear" placeholder="Length of year">
-                <input type="text" name="planetType" placeholder="Planet type">
-                <textarea type="text" rows="4" cols="30" name="planetInfo" placeholder="Planet info"></textarea>
-                <input type="text" name="planetImage" placeholder="Planet image">
+<!--<div class="container" xmlns:th="http://www.thymleaf.org" th:fragment="add-planet">-->
+    <!--<div class="row">-->
+        <!--<div class="col-12-md">-->
+            <!--<form th:action="@{/add-planet}" th:object="${planet}" method="post" action="/add-planet">-->
+                <!--<input type="text" name="planetName" placeholder="Planet name">-->
+                <!--<input type="number" name="distanceFromSun" placeholder="Distance from sun">-->
+                <!--<input type="number" name="oneWayLightTimeToTheSun" placeholder="One way light time to the Sun">-->
+                <!--<input type="number" name="lengthOfYear" placeholder="Length of year">-->
+                <!--<input type="text" name="planetType" placeholder="Planet type">-->
+                <!--<textarea type="text" rows="4" cols="30" name="planetInfo" placeholder="Planet info"></textarea>-->
+                <!--<input type="text" name="planetImage" placeholder="Planet image">-->
 
-                <button type="submit" class="btn btn-sm btn-success">Create planet</button>
-            </form>
-        </div>
+                <!--<button type="submit" class="btn btn-sm btn-success">Create planet</button>-->
+            <!--</form>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="container" xmlns:th="http://www.thymeleaf.org" th:fragment="add-planet">
+    <div class="row">
+        <form th:action="@{/add-planet}" th:object="${planet}" method="post" action="/add-planet">
+        <div class="col-sm-12 col-md-6 form-col">
+                <label>Planet Name</label>
+                <input type="text" name="planetName" placeholder="Planet name" class="form-control">
+            </div>
+            <div class="col-sm-12 col-md-6 form-col">
+                <label>Distance From Sun</label>
+                <input type="number" name="distanceFromSun" placeholder="Distance from Sun" class="form-control">
+            </div>
+            <div class="col-sm-12 col-md-6 form-col">
+                <label>One Way Light Time To The Sun</label>
+                <input type="number" step="0.0001" name="oneWayLightTimeToTheSun" placeholder="One way light time to the Sun" class="form-control">
+            </div>
+            <div class="col-sm-12 col-md-6 form-col">
+                <label>Length Of Year</label>
+                <input type="number" name="lengthOfYear" placeholder="Length of year" class="form-control">
+            </div>
+            <div class="col-sm-12 col-md-6 form-col">
+                <label>Planet Type</label>
+                <input type="text" name="planetType" placeholder="Planet type" class="form-control">
+            </div>
+            <div class="col-sm-12 col-md-6 form-col">
+                <label>Planet Image</label>
+                <input type="text" name="planetImage" placeholder="Planet image" class="form-control">
+            </div>
+            <div class="col-sm-12 form-col">
+                <label>Planet Info</label>
+                <textarea rows="4" name="planetInfo" placeholder="Planet info" class="form-control"></textarea>
+            </div>
+            <div class="col-sm-12 text-right form-col">
+                <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-plus-square" aria-hidden="true"></i> Create</button>
+            </div>
+        </form>
     </div>
+    <hr>
 </div>

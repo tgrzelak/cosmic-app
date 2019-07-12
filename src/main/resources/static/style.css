@@ -17,3 +17,19 @@
     color: white;
     font-size: 30px;
 }
+
+.caption {
+    color: #ffffff !important;
+}
+
+.thumbnail {
+    box-shadow: 0px 10px 18px -8px rgba(0,0,0,0.75) !important;
+    background-color: rgba(255,255,255,.1) !important;
+    border: none !important;
+    font-size: 17px !important;
+    text-shadow: 1px 1px #555555 !important;
+}
+
+.form-col {
+    margin-top: 20px;
+}
